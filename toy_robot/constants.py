@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+
+PLACE = 'PLACE'
+LEFT = 'LEFT'
+RIGHT = 'RIGHT'
+MOVE = 'MOVE'
+REPORT = 'REPORT'
+SINGLE_PART_COMMANDS = (LEFT, RIGHT, MOVE, REPORT)
+MULTI_PART_COMMANDS = (PLACE,)
+VALID_COMMANDS = SINGLE_PART_COMMANDS + MULTI_PART_COMMANDS
+
+NORTH = 'NORTH'
+SOUTH = 'SOUTH'
+EAST = 'EAST'
+WEST = 'WEST'
+VALID_DIRECTIONS = (NORTH, SOUTH, EAST, WEST)
+
+DEFAULT_TABLE_SIZE = {'x': 5, 'y': 5}
+
+INITIAL_STATE = {
+    'is_placed': False,
+    'table_size': DEFAULT_TABLE_SIZE,
+    'coordinates': None,
+    'direction': None
+}
